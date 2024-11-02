@@ -54,6 +54,8 @@ print("SELESAI")
 ```
 akan menampilkan `SELESAI!`
 
+![foto](https://github.com/FajarMhr24/foto/blob/393b2154098b542dce025ead42182a0d7076e4d4/Screenshot%202024-11-02%20185433.png)
+
  ## alur kode latihan2
 
 ```python
@@ -101,6 +103,8 @@ print(f"\nTotal modal pada akhir bulan ke-8: Rp{modal:,.0f}")
 ```
 Setelah loop selesai, kode ini menampilkan total modal setelah bulan ke-8, diformat dengan pemisah ribuan untuk tampilan yang lebih mudah dibaca.
 
+![foto](https://github.com/FajarMhr24/foto/blob/393b2154098b542dce025ead42182a0d7076e4d4/Screenshot%202024-11-02%20185827.png)
+
 ## alur kode latihan3
 
 ```python
@@ -128,7 +132,7 @@ pilihan = int(input("Pilih menu (1/2): "))
 ```
 kode ini meminta pengguna memasukkan pilihan menu dalam bentuk angka (`1` atau `2`). Angka tersebut disimpan dalam variabel `pilihan`.
 
-## - plihan menu
+## - pilihan menu
 
  ```python
 if pilihan == 1:
@@ -146,4 +150,24 @@ jika pengguna memilih 1, maka akan ada langkah-langkah untuk melakukan penarikan
    - ```python
       saldo -= jumlah
      print(f"Penarikan berhasil. Sisa saldo Anda: Rp{saldo}")
-    ``
+     ```
+     Saldo dikurangi sebesar jumlah, dan saldo baru ditampilkan kepada pengguna.
+  - ```python
+    else:
+    print("Saldo Anda tidak mencukupi!")
+    ```
+    Jika saldo tidak mencukupi, maka pesan `"Saldo Anda tidak mencukupi!"` akan ditampilkan.
+  - ```python
+    elif pilihan == 2:
+    print("Terima kasih telah menggunakan layanan ATM!")
+    break
+    ```
+    Jika pengguna memilih `2`, maka kode akan mencetak pesan "Terima kasih telah menggunakan layanan ATM!" dan menghentikan loop dengan perintah `break`, sehingga program selesai
+    - ```python
+      else:
+      print("Pilihan tidak valid, silakan coba lagi.")
+      ```
+      Jika pengguna memasukkan pilihan selain `1` atau `2`, pesan "Pilihan tidak valid, silakan coba lagi." akan ditampilkan dan loop akan berulang.
+
+![foto](https://github.com/FajarMhr24/foto/blob/393b2154098b542dce025ead42182a0d7076e4d4/Screenshot%202024-11-02%20190135.png)
+
