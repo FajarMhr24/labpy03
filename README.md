@@ -60,4 +60,90 @@ akan menampilkan `SELESAI!`
 modal_awal = 100_000_000
 ```
 Kode ini menginisialisasi variabel `modal_awal` dengan nilai 100 juta.
-  
+
+```python
+laba_bulan = [0, 0, 0.01, 0.01, 0.05, 0.05, 0.05, 0.03]
+```
+- `0` berarti tidak ada laba pada bulan tersebut.
+- `0.01` laba 1%.
+- `0.05` laba 5%.
+- `0.03` laba 3%.
+
+```python
+modal = modal_awal
+```
+Variabel `modal` diinisialisasi dengan nilai `modal_awal`. Variabel ini akan diubah setiap bulan untuk menghitung total modal setelah laba ditambahkan.
+
+```python
+for i, persentase_laba in enumerate(laba_bulan):
+```
+Loop `for` digunakan untuk menghitung laba dan memperbarui modal setiap bulan. `enumerate` memberikan indeks `i` untuk melacak bulan ke berapa, dan `persentase_laba` adalah nilai persentase laba untuk bulan tersebut.
+
+```python
+laba_bulan_ini = modal * persentase_laba
+```
+Di dalam loop, variabel `laba_bulan_ini` digunakan untuk menghitung laba berdasarkan `modal` saat ini dan `persentase_laba` bulan tersebut. Laba ini kemudian akan ditambahkan ke modal.
+
+```python
+modal += laba_bulan_ini
+```
+Laba yang diperoleh pada bulan tersebut (`laba_bulan_ini`) ditambahkan ke `modal`, memperbarui total modal.
+
+```python
+print(f"laba bulan ke{i+1}: sebesar {persentase_laba*100}% -> Total modal: Rp{modal:,.0f}")
+```
+Bulan keberapa (`i+1` untuk menjadikannya mulai dari 1).
+Persentase laba untuk bulan tersebut (dikali 100 agar dalam bentuk persen).
+Total modal setelah laba bulan tersebut ditambahkan, diformat dalam format rupiah dengan pemisah ribuan.
+
+```python
+print(f"\nTotal modal pada akhir bulan ke-8: Rp{modal:,.0f}")
+```
+Setelah loop selesai, kode ini menampilkan total modal setelah bulan ke-8, diformat dengan pemisah ribuan untuk tampilan yang lebih mudah dibaca.
+
+## alur kode latihan3
+
+```python
+saldo = 1000000
+```
+Kode ini menginisialisasi variabel saldo dengan nilai 1.000.000. 
+
+```python
+while True:
+```
+Kode ini membuat infinite loop yang akan terus berjalan sampai ada perintah untuk menghentikannya.
+
+```python
+print(f"\nSaldo saat ini: Rp{saldo}")
+print("1. Tarik Tunai")
+print("2. Keluar")
+```
+ kode ini menampilkan saldo saat ini dan daftar menu pilihan:
+
+- 1 untuk "Tarik Tunai".
+- 2 untuk "Keluar".
+
+```python
+pilihan = int(input("Pilih menu (1/2): "))
+```
+kode ini meminta pengguna memasukkan pilihan menu dalam bentuk angka (`1` atau `2`). Angka tersebut disimpan dalam variabel `pilihan`.
+
+## - plihan menu
+
+ ```python
+if pilihan == 1:
+```
+jika pengguna memilih 1, maka akan ada langkah-langkah untuk melakukan penarikan tunai:
+  - ```python
+    jumlah = int(input("Masukkan jumlah penarikan: Rp"))
+    ```
+    diminta memasukkan jumlah uang yang ingin ditarik, yang  disimpan dalam variabel `jumlah`.
+   - ```python
+     if jumlah <= saldo:
+     ```
+     Kode ini memeriksa apakah jumlah yang diminta untuk ditarik (`jumlah`) kurang dari atau sama dengan saldo saat ini.
+      
+   - ```python
+      saldo -= jumlah
+     print(f"Penarikan berhasil. Sisa saldo Anda: Rp{saldo}")
+    ``
