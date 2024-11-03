@@ -1,6 +1,6 @@
 # Praktikum 3 - perulangan
 
-Nama : Fajar maher habibillah
+Nama : Fajar Maher Habibillah
 
 Kelas : TI.24.A.5
 
