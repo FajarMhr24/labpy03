@@ -169,5 +169,5 @@ jika pengguna memilih 1, maka akan ada langkah-langkah untuk melakukan penarikan
       ```
       Jika pengguna memasukkan pilihan selain `1` atau `2`, pesan "Pilihan tidak valid, silakan coba lagi." akan ditampilkan dan loop akan berulang.
 
-![foto](https://github.com/FajarMhr24/foto/blob/393b2154098b542dce025ead42182a0d7076e4d4/Screenshot%202024-11-02%20190135.png)
+![foto](https://github.com/FajarMhr24/foto/blob/401b430c11f856b56ceaf2f1edd39c6405c377f2/Screenshot%202024-10-17%20204153.png)
 
